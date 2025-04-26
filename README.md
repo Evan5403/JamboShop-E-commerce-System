@@ -70,6 +70,13 @@ Built as part of a school project, it aims to demonstrate online shopping functi
 
 To successfully integrate M-Pesa Daraja API, follow these steps to create an app and obtain the required credentials:
 
+### 📁 Files of Interest
+
+- `users_area/mpesa_api/access_token.php` – Handles generation of the OAuth 2.0 access token from Safaricom API.
+- `users_area/mpesa_api/initiate_payment.php` – Initiates the STK Push (Lipa na M-Pesa Online) request.
+
+---
+
 ### Steps:
 
 1. **Register an account** on the [Safaricom Developer Portal](https://developer.safaricom.co.ke/).
@@ -87,20 +94,13 @@ To successfully integrate M-Pesa Daraja API, follow these steps to create an app
 4. **Save your app**.
 
 5. After saving, you will be given:
-   - **Consumer Key** (used in `access_token.php`)
-   - **Consumer Secret** (used in `access_token.php`)
+   - **Consumer Key**
+   - **Consumer Secret**
+   - which you will replace those in `access_token.php`
 
 6. **Get the Shortcode and Passkey**:
-   - Go to the **"Test Credentials"** section under your app.
-   - Note your **Shortcode** (typically `174379` for PayBill in sandbox).
-   - Copy the **Lipa na M-Pesa Passkey** (used in `initiate_payment.php`).
-
-7. **Test Phone Numbers**:
-   - Use the provided **sandbox phone numbers** (e.g., `254708374149`) to simulate payments.
-   - No actual M-Pesa account is required.
-
-8. **Update the Project Files**:
-   - Replace the dummy `Consumer Key`, `Consumer Secret`, and `Passkey` in your project (`access_token.php`, `initiate_payment.php`) with the real sandbox credentials you obtained.
+   - Prompt Chatgpt to rewrite `initiate_payment.php` using the passkey description: 'This is the password used for encrypting the request sent: A base64 encoded string. (The base64 string is a combination of Shortcode+Passkey+Timestamp)' - M-Pesa Express Simulate under API in your profile
+   - For further assistance (https://www.youtube.com/watch?v=_wZI3uGubzY&list=WL&index=1&t=848s).
 
 ---
 
@@ -112,7 +112,48 @@ To successfully integrate M-Pesa Daraja API, follow these steps to create an app
 | Consumer Secret | `access_token.php` |
 | Shortcode (PayBill) | `initiate_payment.php` |
 | Lipa na M-Pesa Passkey | `initiate_payment.php` |
-| Test Phone Numbers | Payment Simulation |
 
 ---
+
+## Setting Up EmailJS for Order Notifications
+
+The project uses **EmailJS** to send email notifications directly from the frontend/backend without needing your own server SMTP.
+
+### Steps:
+
+1. **Register an account** on [EmailJS](https://www.emailjs.com/).
+
+2. **Login** to your EmailJS dashboard.
+
+3. **Create an Email Service**:
+   - Go to **Email Services** → **Add New Service**.
+   - Connect an email service provider (e.g., Gmail, Outlook, Yahoo).
+   - Authorize the connection.
+
+4. **Create an Email Template**:
+   - Go to **Email Templates** → **Create New Template**.
+   - Design your email:
+     - Subject: _"New Order Notification"_
+     - Body: Include placeholders like `${order_id}`, `${customer_name}`, `${order_total}`, etc.
+   - Save the template.
+   - Example of template used
+![Image](https://github.com/user-attachments/assets/be12dc48-adf1-493a-95a3-402554cd811c)
+
+5. **Get Your Credentials**:
+   - **Service ID** — your connected email service.
+   - **Template ID** — the email template you created.
+   - **Public Key** — your EmailJS user/public key.
+
+6. **Update the Project File (`list_orders.php`)**:
+   - Replace the dummy `YOUR_SERVICE_ID`, `YOUR_TEMPLATE_ID`, and `YOUR_PUBLIC_KEY` in the file with the actual ones you obtained.
+
+---
+## Contact
+1. Developer: Evans Abonyo
+2. Phone Number: 254743677813
+3. Email: evansabonyomutula@gmail.com
+4. LinkedIn: www.linkedin.com/in/evansabonyo
+5. GitHub: Evan5403
+
+
 
