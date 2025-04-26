@@ -120,8 +120,7 @@ To successfully integrate M-Pesa Daraja API, follow these steps to create an app
 | Consumer Key | `access_token.php` |
 | Consumer Secret | `access_token.php` |
 | Shortcode (PayBill) | `initiate_payment.php` |
-| Lipa na M-Pesa Passkey | 
-`initiate_payment.php` |
+| Lipa na M-Pesa Passkey |`initiate_payment.php` |
 
 ---
 
