@@ -68,7 +68,7 @@ Built as part of a school project, it aims to demonstrate online shopping functi
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/Evans5403/jamboshop-ecommerce.git
+   git clone https://github.com/Evans5403/jamboshop-e-commerce-system.git
 2. Open PhpMyAdmin from your local Application Server.
 3. Create new database and name it as "mystore"
 4. Import mystore.sql located at mysql folder to your mystore database.
@@ -127,6 +127,10 @@ To successfully integrate M-Pesa Daraja API, follow these steps to create an app
 ## Setting Up EmailJS for Order Notifications
 
 The project uses **EmailJS** to send email notifications directly from the frontend/backend without needing your own server SMTP.
+
+### 📁 Files of Interest
+
+- `admin/store mgt/list_orders.php` – Handles generation of the OAuth 2.0 access token from Safaricom API.
 
 ### Steps:
 
