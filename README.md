@@ -120,7 +120,8 @@ To successfully integrate M-Pesa Daraja API, follow these steps to create an app
 | Consumer Key | `access_token.php` |
 | Consumer Secret | `access_token.php` |
 | Shortcode (PayBill) | `initiate_payment.php` |
-| Lipa na M-Pesa Passkey | `initiate_payment.php` |
+| Lipa na M-Pesa Passkey | 
+`initiate_payment.php` |
 
 ---
 
@@ -130,7 +131,7 @@ The project uses **EmailJS** to send email notifications directly from the front
 
 ### 📁 Files of Interest
 
-- `admin/store mgt/list_orders.php` – Handles generation of the OAuth 2.0 access token from Safaricom API.
+- `admin/store mgt/list_orders.php` – Handles order management on the admin side.
 
 ### Steps:
 
