@@ -41,6 +41,9 @@ Built as part of a school project, it aims to demonstrate online shopping functi
 ### Product Listing
 ![Image](https://github.com/user-attachments/assets/58c6e88d-118d-468f-b871-f9c0220fe554)
 
+### Product Review/Ratings
+![Image](https://github.com/user-attachments/assets/0aa42e37-a9ee-43ad-8b1f-7a5a50f50db9)
+
 ### Shopping Cart & Promotions/Offers
 ![Image](https://github.com/user-attachments/assets/012ddfc4-e93e-490e-bccf-9b66da966067)
 ![Image](https://github.com/user-attachments/assets/9f5bfb83-d108-4c37-84dd-2d61cf65d682)
@@ -50,13 +53,14 @@ Built as part of a school project, it aims to demonstrate online shopping functi
 ![Image](https://github.com/user-attachments/assets/cb01184e-ce1f-4ea9-bc7f-93b3de35f562)
 ![Image](https://github.com/user-attachments/assets/4c9adb19-c171-4954-93d9-050d4958d77e)
 
-### Admin Dashboard
-![Image](https://github.com/user-attachments/assets/d6e7c007-bc04-4d62-aaf8-e5cddaff9165)
-
 ### Order Tracking User & Admin
 ![Image](https://github.com/user-attachments/assets/b1588151-2db8-4510-8dff-d14a83dca9f5)
 ![Image](https://github.com/user-attachments/assets/f713e9c1-4f98-4a7f-8447-3d4fc1e90a65)
 ![Image](https://github.com/user-attachments/assets/0c0dac5b-351d-46f9-8291-7e0f0af0519c)
+
+### Admin Dashboard
+![Image](https://github.com/user-attachments/assets/d6e7c007-bc04-4d62-aaf8-e5cddaff9165)
+
 
 ---
 
@@ -155,13 +159,13 @@ The project uses **EmailJS** to send email notifications directly from the front
 ---
 
 ## User Credentials
-username: johndoe password: 123
-username: janedoe password: 123
+1. username: johndoe password: 123
+2. username: janedoe password: 123
 
 ## Admin Credentials
-admin: joe password: 123
-marketer: anna password: 123
-store_manager: james password: 123
+1. admin: joe password: 123
+2. marketer: anna password: 123
+3. store_manager: james password: 123
 
 ---
 ## Contact
