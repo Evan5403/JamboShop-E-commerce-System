@@ -53,6 +53,11 @@ Built as part of a school project, it aims to demonstrate online shopping functi
 ### Admin Dashboard
 ![Image](https://github.com/user-attachments/assets/d6e7c007-bc04-4d62-aaf8-e5cddaff9165)
 
+### Order Tracking User & Admin
+![Image](https://github.com/user-attachments/assets/b1588151-2db8-4510-8dff-d14a83dca9f5)
+![Image](https://github.com/user-attachments/assets/f713e9c1-4f98-4a7f-8447-3d4fc1e90a65)
+![Image](https://github.com/user-attachments/assets/0c0dac5b-351d-46f9-8291-7e0f0af0519c)
+
 ---
 
 ## Setup Instructions
@@ -146,6 +151,17 @@ The project uses **EmailJS** to send email notifications directly from the front
 
 6. **Update the Project File (`list_orders.php`)**:
    - Replace the dummy `YOUR_SERVICE_ID`, `YOUR_TEMPLATE_ID`, and `YOUR_PUBLIC_KEY` in the file with the actual ones you obtained.
+
+---
+
+## User Credentials
+username: johndoe password: 123
+username: janedoe password: 123
+
+## Admin Credentials
+admin: joe password: 123
+marketer: anna password: 123
+store_manager: james password: 123
 
 ---
 ## Contact
